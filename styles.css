@@ -1,0 +1,129 @@
+/* Stile di base */
+body {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to left, #B9B4C7 50%, #FAF0E6 100%);
+    color: #FF00FF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #FF00FF;
+    font-size: 48px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tablinks {
+    background-color: #FF00FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 30px;
+}
+
+.tablinks:hover {
+    background-color: #FF99FF;
+}
+
+.tabcontent {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(70% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FF33FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #FF99FF;
+}
+
+.checked {
+    display: none;
+}
+
+/* Media queries */
+
+/* Per dispositivi fino a 768px (tablet e smartphone in modalità landscape) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .tablinks {
+        padding: 8px 16px;
+        margin: 0 3px;
+        border-radius: 20px;
+    }
+
+    input[type="text"] {
+        width: calc(70% - 6px);
+        padding: 6px;
+    }
+
+    button {
+        padding: 8px 16px;
+        border-radius: 20px;
+    }
+}
+
+/* Per dispositivi fino a 480px (smartphone in modalità portrait) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .tablinks {
+        padding: 6px 12px;
+        margin: 0 2px;
+        border-radius: 15px;
+    }
+
+    input[type="text"] {
+        width: calc(70% - 4px);
+        padding: 4px;
+    }
+
+    button {
+        padding: 6px 12px;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Plan Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Life Plan</h1>
+        <div class="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'annual')">Annual</button>
+            <button class="tablinks" onclick="openTab(event, 'monthly')">Monthly</button>
+            <button class="tablinks" onclick="openTab(event, 'weekly')">Weekly</button>
+            <button class="tablinks" onclick="openTab(event, 'daily')">Daily</button>
+        </div>
+
+        <div id="annual" class="tabcontent" style="display: block;">
+            <h2>Annual Goals</h2>
+            <input type="text" id="annualInput" placeholder="Add a goal...">
+            <button onclick="addGoal('annual')">Add Goal</button>
+            <ul id="annualList"></ul>
+        </div>
+
+        <div id="monthly" class="tabcontent">
+            <h2>Monthly Goals</h2>
+            <input type="text" id="monthlyInput" placeholder="Add a goal...">
+            <button onclick="addGoal('monthly')">Add Goal</button>
+            <ul id="monthlyList"></ul>
+        </div>
+
+        <div id="weekly" class="tabcontent">
+            <h2>Weekly Goals</h2>
+            <input type="text" id="weeklyInput" placeholder="Add a goal...">
+            <button onclick="addGoal('weekly')">Add Goal</button>
+            <ul id="weeklyList"></ul>
+        </div>
+
+        <div id="daily" class="tabcontent">
+            <h2>Daily Goals</h2>
+            <input type="text" id="dailyInput" placeholder="Add a goal...">
+            <button onclick="addGoal('daily')">Add Goal</button>
+            <ul id="dailyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
